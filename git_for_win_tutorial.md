@@ -1,33 +1,31 @@
 # Git for Windows
 #### 參考：
-安裝：https://gitbook.tw/chapters/environment/install-git-in-windows.html
+安裝：https://gitbook.tw/chapters/environment/install-git-in-windows.html  
 快捷鍵：https://juejin.im/post/5bd5a08cf265da0add520772
 
-新增環境變數：https://www.itread01.com/p/912692.html
-設定sudo:https://www.itread01.com/content/1548980665.html
+新增環境變數：https://www.itread01.com/p/912692.html  
+設定sudo:https://www.itread01.com/content/1548980665.html  
 設定make:
 
 git bash 設定:https://github.com/xnng/my-git-bash
 
 
 ## 教學步驟
-- [ ] Step1：到官網下載git並安裝
+### Step1：到官網下載git並安裝
   1. https://git-scm.com/download/win
   2. 一路按下一步按到底
   3. 安裝完就可在任意處按右鍵點選```git bash```開始使用
 
-- [ ] Step2：設定快速鍵(Ctrl+Alt+T)開啟```git bash```
+### Step2：設定快速鍵(Ctrl+Alt+T)開啟```git bash```
   1. 按```win鍵```搜尋```Git Bash```，點選```開啟檔案位置```
   2. 右鍵點選```Git Bash```，點選```屬性```
-  3. 設置快捷鍵，輸入```Ctrl+Alt+T``` 
-
-- [ ] Step3：解決快捷鍵延遲問題
-問題：按下快捷建終端會延遲3秒才打開，是某些版本的windows上普遍存在的bug
+  3. 設置快捷鍵，輸入```Ctrl+Alt+T```   
+問題：按下快捷建終端會延遲3秒才打開，是某些版本的windows上普遍存在的bug  
 解決方法：禁用服務```SysMain```
-  1. 按```win鍵```搜尋```服務```並打開
-  2. 找到並按右鍵點選```SysMain```，選擇```停用```
+  4. 按```win鍵```搜尋```服務```並打開
+  5. 找到並按右鍵點選```SysMain```，選擇```停用```
 
-- [ ] Step4：新增sudo指令到環境變數
+### Step3：設定sudo指令
 問題：windows沒有sudo指令
 解決方法：自己寫一個執行在Windows系統的sudo命令工具
 ＊＊＊未完成
@@ -79,8 +77,9 @@ End If
   3. 左邊點選```進階???```，（在```進階```）點選```環境變數```，在```系統變數```裡雙擊```path```，點選```新增```
   4. 將```sudo.vbs```所在路徑新增到環境變數
 
+### Step4：設定make指令
 
-- [ ] Step5：修改預設、新增工具--字體、主題、tmux
+### Step5：修改預設、新增工具--字體、主題、tmux
 使用套件：https://github.com/xnng/my-git-bash
   1. 開啟```git bash```下載套件：
 ```bash
@@ -104,5 +103,5 @@ $ echo -e "setw -g mouse\nset-option -g mouse on" > ~/.tmux.conf
 
 
 
-- [ ] Step6：
+### Step6：
 
